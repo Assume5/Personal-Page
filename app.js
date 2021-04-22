@@ -9,6 +9,8 @@ function main(){
     $("#skill_4_right").hide();
     $("#skill_4_heading").hide();
     $("#skill_4_hr").hide();
+    $("#project_content").hide();
+    
     document.documentElement.style.setProperty('--animate-duration', '2s');
 window.addEventListener("scroll", myScrollFunc);
 
@@ -35,6 +37,12 @@ var myScrollFunc = function () {
             $("#skill_4_heading").show();
             $("#skill_4_left").show();
             $("#skill_4_right").show();
+        }
+        if (y >= 2500) {
+            $("#project_content").show();
+        }
+        if (y <= 2500) {
+            $("#project_content").hide();
         }
         if (y <= 2200) {
             $("#skill_4_left").hide();
