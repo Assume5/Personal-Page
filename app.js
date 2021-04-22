@@ -19,7 +19,6 @@ window.addEventListener("scroll", myScrollFunc);
 
 var myScrollFunc = function () {
         var y = window.scrollY;
-        console.log(y)
         if (y >= 200) {
             $("#skill_1_left").show();
             $("#skill_1_right").show();
