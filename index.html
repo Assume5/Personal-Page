@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class="container" style="margin-top: 10%;">
-		<div class="row">
+		<div class="row" id="profile">
 			<div class="col-md-3">
 				<div class="sidebar animate__animated animate__fadeInLeft">
 					<div class="useravatar">
@@ -56,7 +56,7 @@
   <div class="content" style="margin-top: 15%;">
     <h3 style="color: #201d37; text-align: center;">Skills</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 20%;"><br><br>
     <div class="row">
-    <div class="col-md-6" style="margin-left: auto; margin-right: auto; display: block;">
+    <div id="skill_1_left" class="col-md-6 animate__animated animate__fadeInLeft" style="display: none; margin-left: auto; margin-right: auto; display: block;">
       <h3 style="color: #201d37; text-align: center;">Programming Language</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
       <div class="skills">
         <img src="img/C.png" alt="">
@@ -78,13 +78,30 @@
         <img src="img/javascript.png" alt="">
         <p style="text-align: center;">Javascript</p>
       </div>
+    </div>
+    <div id="skill_1_right" class="col-md-6  animate__animated animate__fadeInRight" style="display: none; margin-left: auto; margin-right: auto; display: block;">
+      <h3 style="color: #201d37; text-align: center;">HTML/CSS</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
       <div class="skills">
-        <img src="img/Solidity.png" alt="">
-        <p style="text-align: center;">Solidity</p>
+        <img src="img/bootstrap.png" alt="">
+        <p style="text-align: center;">Bootstrap</p>
       </div>
-      <div class="skills" style="width: 100%;">
+      <div class="skills">
+        <img src="img/HTML.png" alt="">
+        <p style="text-align: center;">HTML</p>
+      </div>
+      <div class="skills">
+        <img src="img/CSS.png" alt="">
+        <p style="text-align: center;">CSS</p>
+      </div>
+      <div class="skills">
+        <img src="img/PlotlyJS.jpg" alt="">
+        <p style="text-align: center;">PlotlyJS</p>
+      </div>
+    </div>
+
+
+    <div id="skill_2_left" class="col-md-6 animate__animated animate__fadeInLeft" style="margin-left: auto; margin-right: auto; display: block;">
         <h3 style="color: #201d37; text-align: center; width: 100%;" >Data Base</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
-      </div>
       <div class="skills">
         <img src="img/mysql.png" alt="">
         <p style="text-align: center;">MySql</p>
@@ -94,54 +111,99 @@
         <p style="text-align: center;">MongoDB</p>
       </div>
     </div>
-    <div class="col-md-6" style="margin-left: auto; margin-right: auto; display: block;">
+    <div id="skill_2_right" class="col-md-6 animate__animated animate__fadeInRight" style="margin-left: auto; margin-right: auto; display: block;">
+        <h3 style="color: #201d37; text-align: center; width: 100%;" >Front End</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
       <div class="skills">
-        <img src="img/expressjs.jpg" alt="">
-        <p style="text-align: center;">Expressjs</p>
+        <img src="img/jquery.gif" alt="">
+        <p style="text-align: center;">Jquery</p>
       </div>
       <div class="skills">
         <img src="img/electron.png" alt="">
         <p style="text-align: center;">Electron</p>
       </div>
-      <div class="skills">
-        <img src="img/javascript.png" alt="">
-        <p style="text-align: center;">Javascript</p>
-      </div>
-      <div class="skills">
-        <img src="img/jquery.gif" alt="">
-        <p style="text-align: center;">Jquery</p>
-      </div>
-      <div class="skills">
-        <img src="img/nodejs.png" alt="">
-        <p style="text-align: center;">NodeJS</p>
-      </div>
+    </div>
 
+    <div id="skill_3_left" class="col-md-6 animate__animated animate__fadeInLeft" style="margin-left: auto; margin-right: auto; display: block;">
+        <h3 style="color: #201d37; text-align: center; width: 100%;" >Blockchain</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
       <div class="skills">
-        <img src="img/HTMLCSS.png" alt="">
-        <p style="text-align: center;">HTML&CSS</p>
+        <img src="img/ganache.jpg" alt="">
+        <p style="text-align: center;">Ganache</p>
       </div>
       <div class="skills">
-        <img src="img/bootstrap.png" alt="">
-        <p style="text-align: center;">Bootstrap</p>
-      </div>
-
-      <div class="skills">
-        <img src="img/jquery.gif" alt="">
-        <p style="text-align: center;">Jquery</p>
+        <img src="img/truffle.png" alt="">
+        <p style="text-align: center;">Truffle</p>
       </div>
       <div class="skills">
-        <img src="img/nodejs.png" alt="">
-        <p style="text-align: center;">NodeJS</p>
+        <img src="img/Infura.png" alt="">
+        <p style="text-align: center;">Infura</p>
       </div>
       <div class="skills">
-        <img src="img/mysql.png" alt="">
-        <p style="text-align: center;">MySql</p>
+        <img src="img/Ethereum.png" alt="">
+        <p style="text-align: center;">Ethereum</p>
+      </div>
+      <div class="skills">
+        <img src="img/Metamask.png" alt="">
+        <p style="text-align: center;">Metamask</p>
+      </div>
+      <div class="skills">
+        <img src="img/Solidity.png" alt="">
+        <p style="text-align: center;">Solidity</p>
       </div>
     </div>
+    <div id="skill_3_right" class="col-md-6 animate__animated animate__fadeInRight" style="margin-left: auto; margin-right: auto; display: block;">
+        <h3 style="color: #201d37; text-align: center; width: 100%;" >Back End</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
+      <div class="skills">
+        <img src="img/expressjs.jpg" alt="">
+        <p style="text-align: center;">Expressjs</p>
+      </div>
+
+      <div class="skills">
+        <img src="img/nodejs.png" alt="">
+        <p style="text-align: center;">NodeJS</p>
+      </div>
+      <div class="skills">
+        <img src="img/Bottle.png" alt="">
+        <p style="text-align: center;">Bottle</p>
+      </div>
+      <div class="skills">
+        <img src="img/Flask.png" alt="">
+        <p style="text-align: center;">Flask</p>
+      </div>
+      <div class="skills">
+        <img src="img/Django.png" alt="">
+        <p style="text-align: center;">Django</p>
+      </div>
+    </div>
+
+
+    <h3 style="color: #201d37; text-align: center; width: 100%;" >Framework/Tools</h3><hr style="margin: 0 auto; height: 5px; border: 0px solid #201d37; border-top-width: 1px; width: 100%;"><br><br>
+    <div id="skill_4_left" class="col-md-6 animate__animated animate__fadeInLeft" style="margin-left: auto; margin-right: auto; display: block;">
+      <div class="skills">
+      <img src="img/PhaserIO.png" alt="">
+      <p style="text-align: center;">PhaserIO</p>
+    </div>
+    <div class="skills">
+      <img src="img/SocketIO.png" alt="">
+      <p style="text-align: center;">SocketIO</p>
+    </div>
   </div>
+  <div id="skill_4_right" class="col-md-6 animate__animated animate__fadeInRight" style="margin-left: auto; margin-right: auto; display: block;">
+    <div class="skills">
+    <img src="img/OpenCV.png" alt="">
+    <p style="text-align: center;">OpenCV</p>
+  </div>
+  <div class="skills">
+    <img src="img/Git.png" alt="">
+    <p style="text-align: center;">Git</p>
+  </div>
+</div>
+  </div>
+
   </div>
 
 
   </div>
+  <script src="app.js"></script>
+
 </body>
 </html>
