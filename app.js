@@ -1,46 +1,58 @@
-$(document).ready(function() {
+function main(){
+    $("#skill_1_left").hide();
+    $("#skill_1_right").hide();
     $("#skill_2_left").hide();
     $("#skill_2_right").hide();
     $("#skill_3_left").hide();
     $("#skill_3_right").hide();
     $("#skill_4_left").hide();
     $("#skill_4_right").hide();
-    var topOfOthDiv1 = $("#skill_1_left").offset().top;
-    var topOfOthDiv2 = $("#skill_2_left").offset().top;
+    $("#skill_4_heading").hide();
+    $("#skill_4_hr").hide();
+    document.documentElement.style.setProperty('--animate-duration', '2s');
+window.addEventListener("scroll", myScrollFunc);
 
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv1) { //scrolled past the other div?
+}
+
+
+var myScrollFunc = function () {
+        var y = window.scrollY;
+        console.log(y)
+        if (y >= 200) {
+            $("#skill_1_left").show();
+            $("#skill_1_right").show();
+        }
+        if (y >= 950) {
             $("#skill_2_left").show();
-            $("#skill_2_right").show();        
+            $("#skill_2_right").show();
         }
-    });
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv2) { //scrolled past the other div?
+        if (y >= 1250) {
             $("#skill_3_left").show();
-            $("#skill_3_right").show();        
+            $("#skill_3_right").show();
         }
-    });
-});
-// let topOfOthDivProfile = $("#profile").offset().top;
-// let topOfOthDivSkill_1 = $("#skill_1_left").offset().top;
-// let topOfOthDivSkill_2 = $("#skill_2_left").offset().top;
-// let topOfOthDivSkill_3 = $("#skill_3_left").offset().top;
-
-// $(window).scroll(function() {
-//     if($(window).scrollTop() > topOfOthDivProfile) { //scrolled past the other div?
-//         $("#skill_1_left").show();
-//         $("#skill_1_right").show();        
-//     }
-//     else if($(window).scrollTop() > topOfOthDivSkill_1) { //scrolled past the other div?
-//         $("#skill_2_left").show();
-//         $("#skill_2_right").show();        
-//     }
-//     else if($(window).scrollTop() > topOfOthDivSkill_2) { //scrolled past the other div?
-//         $("#skill_3_left").show();
-//         $("#skill_3_right").show();        
-//     }
-//     else if($(window).scrollTop() > topOfOthDivSkill_3) { //scrolled past the other div?
-//         $("#skill_4_left").show();
-//         $("#skill_4_right").show();        
-//     }
-// });
+        if (y >= 2200) {
+            $("#skill_4_hr").show();
+            $("#skill_4_heading").show();
+            $("#skill_4_left").show();
+            $("#skill_4_right").show();
+        }
+        if (y <= 2200) {
+            $("#skill_4_left").hide();
+            $("#skill_4_right").hide();
+            $("#skill_4_heading").hide();
+            $("#skill_4_hr").hide();
+        }
+        if (y <= 1250) {
+            $("#skill_3_left").hide();
+            $("#skill_3_right").hide();
+        }
+        if (y <= 950) {
+            $("#skill_2_left").hide();
+            $("#skill_2_right").hide();
+        }
+        if (y <= 200) {
+            $("#skill_1_left").hide();
+            $("#skill_1_right").hide();
+        }
+}
+main()
