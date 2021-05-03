@@ -62,4 +62,5 @@ var myScrollFunc = function () {
             $("#skill_1_right").hide();
         }
 }
-main()
+var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
+if(!isMobile) main()
