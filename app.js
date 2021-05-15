@@ -15,15 +15,13 @@ function main(){
 window.addEventListener("scroll", myScrollFunc);
 
 }
-
-
 var myScrollFunc = function () {
         var y = window.scrollY;
         if (y >= 200) {
             $("#skill_1_left").show();
             $("#skill_1_right").show();
         }
-        if (y >= 950) {
+        if (y >= 850) {
             $("#skill_2_left").show();
             $("#skill_2_right").show();
         }
