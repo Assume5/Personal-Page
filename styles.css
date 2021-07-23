@@ -32,7 +32,7 @@ body {
     font-weight: 600;
     margin-bottom: 7px;
   }
-  .content {
+  .content, #project_content {
     padding: 20px;
     background: #fff;
     min-height: 500px;
@@ -47,7 +47,7 @@ body {
   }
   .skills img{
     width: 125px;
-    min-width: 125px;
+    min-height: 125px;
     position:relative; 
     height: auto;
     display: block;
@@ -100,4 +100,13 @@ body {
     background-color: #201d37;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  @media (min-width: 800px) {
+    .row {
+      justify-content: space-between;
+    }
+    .col-md-3 {
+      max-width: 100%;
+    }
   }

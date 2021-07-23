@@ -12,7 +12,7 @@ function main(){
     $("#project_content").css('visibility', 'hidden');
     
     document.documentElement.style.setProperty('--animate-duration', '2s');
-window.addEventListener("scroll", myScrollFunc);
+    window.addEventListener("scroll", myScrollFunc);
 
 }
 var myScrollFunc = function () {
